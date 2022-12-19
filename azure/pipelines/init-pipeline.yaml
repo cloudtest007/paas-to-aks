@@ -2,8 +2,6 @@ name: $(Date:dd.MM.yyyy)$(rev:.r)
 trigger: none
 pr: none
 
-variables:
-- group: 'paas-to-aks'
 
 stages:
   - stage: InitDeploy
