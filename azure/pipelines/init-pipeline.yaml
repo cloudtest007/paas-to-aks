@@ -1,7 +1,9 @@
 name: $(Date:dd.MM.yyyy)$(rev:.r)
 trigger: none
 pr: none
-
+- task: FileTransform@1
+  inputs:
+    folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip'
 
 stages:
   - stage: InitDeploy
